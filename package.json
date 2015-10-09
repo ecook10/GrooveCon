@@ -4,7 +4,7 @@
   "description": "All Your Music In One Place!!",
   "private": true,
   "scripts": {
-    "start": "node app.js"
+    "start": "node server.js"
   },
 
   "repository": {
