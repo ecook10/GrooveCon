@@ -1,0 +1,70 @@
+extends layout
+
+block append stylesheets
+    link(rel="stylesheet", href="/stylesheets/main.css")
+
+block append javascripts
+    script(src="/javascripts/main.js")
+    script(src="/javascripts/search.js")
+    script(src="/javascripts/player.js")
+    script(src="https://www.youtube.com/iframe_api")
+
+block content
+    #header
+        #header_text
+            h1 GrooveCon
+            h2 Welcome!
+        #player
+            p#title_playing(style="visibility: hidden") TITLE
+            #player_controls
+                #play_pause.glyphicon.glyphicon-play
+            #timebubble(style="display:none;")
+                #time
+            
+            #progress_bar
+                span#curr_time.player_time 00:00
+                #bar_bg
+                    #bar_fg(role="progressbar", style="width:0%")
+                span#total_time.player_time 00:00    
+
+            #ytplayer
+            
+    nav#navbar
+        ul#nav_options
+            li#home_nav.active Home
+            li#about_nav About
+            li#library_nav Library
+            li#me_nav Me
+
+        form#query_form(role="search")
+            input#query(type="text", placeholder="Search")
+            button#query_submit(type="submit") Submit
+
+    #content
+        block results
+
+    #overlay(style="display: none")
+        #overlay_bg
+
+        #add_form_wrapper
+            form#add_form
+                #add_header Add to Library
+                br
+                div Title: 
+                input#add_title(type="text", size="60")
+                br
+                div Artist: 
+                input#add_artist(type="text", size="40")
+                br
+                div Album/Collection: 
+                input#add_album(type="text", size="40")
+                br
+                div Genre: 
+                input#add_genre(type="text", size="20")
+                br
+                button#add_submit(type="submit") Add
+                button#add_cancel Cancel
+
+    input#token(type="hidden", value=token)
+
+

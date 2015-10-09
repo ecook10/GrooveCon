@@ -1,0 +1,15 @@
+block append stylesheets
+    link(rel="stylesheet", href="/stylesheets/library.css")
+
+block append javascripts
+    script(src="/javascripts/library.js")
+
+each result in results
+    .result(id=result.id.videoId)
+        img(src=result.snippet.thumbnails.default.url, alt="vid_thumbnail")
+        h4= result.snippet.title
+        #controls
+            button.play(type="button") Play
+            button.next(type="button") Next
+            button.queue(type="button") Queue
+            button.add(type="button") Add

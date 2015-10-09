@@ -1,0 +1,26 @@
+extends layout
+
+block append stylesheets
+    link(rel="stylesheet", href="/stylesheets/login.css")
+
+block append javascripts
+    script(src="/javascripts/login.js")
+
+block content 
+    #login
+        h1 Welcome to GrooveCon
+        h2 Sign in Here
+
+        input#user_in(type="text", placeholder="Login")
+        br
+        input#pw_in(type="password", placeholder="Password")
+
+        #alert(style="display: none;")
+
+        p No Account? 
+            a#new_account(href="#") Create One
+
+        button#submit_login Submit
+
+
+

@@ -1,35 +1,37 @@
 {
-  "name": "OpenShift-Sample-App",
-  "version": "1.0.0",
-  "description": "OpenShift Sample Application",
-  "keywords": [
-    "OpenShift",
-    "Node.js",
-    "application",
-    "openshift"
-  ],
-  "author": {
-    "name": "OpenShift",
-    "email": "ramr@example.org",
-    "url": "http://www.openshift.com/"
+  "name": "GrooveCon",
+  "version": "0.0.1",
+  "description": "All Your Music In One Place!!",
+  "private": true,
+  "scripts": {
+    "start": "node app.js"
   },
-  "homepage": "http://www.openshift.com/",
+
   "repository": {
     "type": "git",
-    "url": "https://github.com/openshift/origin-server"
+    "url": "https://gitub.com/openshift-quickstart/simple_node_express_mongo"
   },
 
   "engines": {
-    "node": ">= 0.6.0",
+    "node": ">= 0.10.0",
     "npm": ">= 1.0.0"
   },
 
   "dependencies": {
-    "express": "~3.4.4"
+    "express": "~4.0.0",
+    "static-favicon": "~1.0.0",
+    "morgan": "~1.0.0",
+    "cookie-parser": "~1.0.1",
+    "body-parser": "~1.0.0",
+    "debug": "~0.7.4",
+    "jade": "~1.3.0",
+    "mongodb": "*",
+    "mongoose": "*",
+    "googleapis": "^2.0.2"
   },
+
   "devDependencies": {},
   "bundleDependencies": [],
-
   "private": true,
   "main": "server.js"
 }

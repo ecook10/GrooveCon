@@ -1,0 +1,27 @@
+.result {
+    margin-top: 10px;
+    padding-top: 1px;
+    height: 120px;
+    clear: left;
+}
+
+.result img {
+    float: left;
+}
+
+.result h4 {
+    margin-left: 140px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-size: 18pt;
+}
+
+#controls {
+    margin-left: 140px;
+}
+
+#controls button {
+    float: left;
+    margin-right: 10px;
+}
+

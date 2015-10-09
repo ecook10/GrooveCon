@@ -1,0 +1,18 @@
+extends layout
+
+block content
+    #login-container
+        form#login
+            h1 Welcome to GrooveCon
+            h2 Sign in Here
+
+            input#user_in(type="text", placeholder="Login")
+            input#pw_in(type="password", placeholder="Password")
+
+            #alert(style="display: none;")
+
+            p No Account? 
+                a(href="#") Sign In
+
+
+
