@@ -3,16 +3,16 @@
 2 info using npm@3.3.6
 3 info using node@v0.10.26
 4 verbose run-script [ 'prestart', 'start', 'poststart' ]
-5 info lifecycle application-name@0.0.1~prestart: application-name@0.0.1
-6 silly lifecycle application-name@0.0.1~prestart: no script for prestart, continuing
-7 info lifecycle application-name@0.0.1~start: application-name@0.0.1
-8 verbose lifecycle application-name@0.0.1~start: unsafe-perm in lifecycle true
-9 verbose lifecycle application-name@0.0.1~start: PATH: /usr/local/lib/node_modules/npm/bin/node-gyp-bin:/Users/me/Desktop/Web Dev/node/GrooveCon/node_modules/.bin:/Library/Frameworks/Python.framework/Versions/3.4/bin:/usr/local/mysql/bin:/usr/local/heroku/bin:/Applications/Postgres93.app/Contents/MacOS/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/local/git/bin:/usr/local/MacGPG2/bin
-10 verbose lifecycle application-name@0.0.1~start: CWD: /Users/me/Desktop/Web Dev/node/GrooveCon
-11 silly lifecycle application-name@0.0.1~start: Args: [ '-c', 'node ./bin/www' ]
-12 silly lifecycle application-name@0.0.1~start: Returned: code: 8  signal: null
-13 info lifecycle application-name@0.0.1~start: Failed to exec start script
-14 verbose stack Error: application-name@0.0.1 start: `node ./bin/www`
+5 info lifecycle GrooveCon@0.0.1~prestart: GrooveCon@0.0.1
+6 silly lifecycle GrooveCon@0.0.1~prestart: no script for prestart, continuing
+7 info lifecycle GrooveCon@0.0.1~start: GrooveCon@0.0.1
+8 verbose lifecycle GrooveCon@0.0.1~start: unsafe-perm in lifecycle true
+9 verbose lifecycle GrooveCon@0.0.1~start: PATH: /usr/local/lib/node_modules/npm/bin/node-gyp-bin:/Users/me/Desktop/WebDev/OpenShift/groovecon/node_modules/.bin:/usr/local/share/npm/bin:/Library/Frameworks/Python.framework/Versions/3.4/bin:/usr/local/mysql/bin:/usr/local/heroku/bin:/Applications/Postgres93.app/Contents/MacOS/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/local/git/bin:/usr/local/MacGPG2/bin
+10 verbose lifecycle GrooveCon@0.0.1~start: CWD: /Users/me/Desktop/WebDev/OpenShift/groovecon
+11 silly lifecycle GrooveCon@0.0.1~start: Args: [ '-c', 'node server.js' ]
+12 silly lifecycle GrooveCon@0.0.1~start: Returned: code: 8  signal: null
+13 info lifecycle GrooveCon@0.0.1~start: Failed to exec start script
+14 verbose stack Error: GrooveCon@0.0.1 start: `node server.js`
 14 verbose stack Exit status 8
 14 verbose stack     at EventEmitter.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/lifecycle.js:233:16)
 14 verbose stack     at EventEmitter.emit (events.js:98:17)
@@ -20,21 +20,21 @@
 14 verbose stack     at ChildProcess.EventEmitter.emit (events.js:98:17)
 14 verbose stack     at maybeClose (child_process.js:743:16)
 14 verbose stack     at Process.ChildProcess._handle.onexit (child_process.js:810:5)
-15 verbose pkgid application-name@0.0.1
-16 verbose cwd /Users/me/Desktop/Web Dev/node/GrooveCon
+15 verbose pkgid GrooveCon@0.0.1
+16 verbose cwd /Users/me/Desktop/WebDev/OpenShift/groovecon
 17 error Darwin 15.0.0
 18 error argv "node" "/usr/local/bin/npm" "start"
 19 error node v0.10.26
 20 error npm  v3.3.6
 21 error code ELIFECYCLE
-22 error application-name@0.0.1 start: `node ./bin/www`
+22 error GrooveCon@0.0.1 start: `node server.js`
 22 error Exit status 8
-23 error Failed at the application-name@0.0.1 start script 'node ./bin/www'.
-23 error This is most likely a problem with the application-name package,
+23 error Failed at the GrooveCon@0.0.1 start script 'node server.js'.
+23 error This is most likely a problem with the GrooveCon package,
 23 error not with npm itself.
 23 error Tell the author that this fails on your system:
-23 error     node ./bin/www
+23 error     node server.js
 23 error You can get their info via:
-23 error     npm owner ls application-name
+23 error     npm owner ls GrooveCon
 23 error There is likely additional logging output above.
 24 verbose exit [ 1, true ]

@@ -1,3 +1,15 @@
-The OpenShift `nodejs` cartridge documentation can be found at:
+#GrooveCon
+###All your online music in one place
 
-http://openshift.github.io/documentation/oo_cartridge_guide.html#nodejs
+
+%%Features%%
+* Search and play YouTube media in a more music-friendly interface
+* Store media in an iTunes-style library
+
+%%To-Do%% 
+* Fix some bugs/unfinished code
+* Add more features to the library
+* Implement more music services (Soundcloud, Spotify)
+* Clean everything up overall
+
+
